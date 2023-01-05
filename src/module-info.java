@@ -1,0 +1,9 @@
+/**
+ * 
+ */
+/**
+ * @author heloi
+ *
+ */
+module chessSystem {
+}
