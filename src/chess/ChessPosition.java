@@ -3,7 +3,7 @@ package chess;
 import boardgame.Position;
 
 public class ChessPosition {
-	private char column;
+	private int column;
 	private int row;
 	public ChessPosition(char column, int row) {
 		if(column < 'a' || column> 'h' || row <1 || row> 8) {
@@ -13,7 +13,7 @@ public class ChessPosition {
 		this.column = column;
 		this.row = row;
 	}
-	public char getColumn() {
+	public int getColumn() {
 		return column;
 	}
 	public int getRow() {
@@ -31,6 +31,9 @@ public class ChessPosition {
 		return "" + column + row;
 	}
 	
-	
+	public void setValues(int row, int column) {
+		this.row = row;
+		this.column = column;
+	}
 
 }
